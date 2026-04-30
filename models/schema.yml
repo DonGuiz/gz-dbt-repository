@@ -1,0 +1,34 @@
+version: 2
+
+sources: 
+  - name: gz_raw_data
+    tables:
+      - name: raw_gz_product
+        description: 'list of products'
+        columns:
+           - name: products_id
+             description: 'Unique ID of each product'
+             tests:
+              - unique
+              - not_null
+           - name: purchase_price
+             description: 'Purchase price for each product'
+      - name: raw_gz_sales
+        description: 'list of sales'
+        columns:
+           - name: date_date
+             description: 'date of purchase'
+           - name: orders_id
+             description: 'unique ID of each order'
+           - name: products_id
+             description: 'unique ID of each product'
+      - name: raw_gz_ship
+        description: list of orders
+        columns:
+           - name: orders_id
+             description: 'unique ID of each order'
+             tests:
+              - unique
+              - not_null
+           - name: sheeping_fee
+             description: 'Ship cost for each order'
