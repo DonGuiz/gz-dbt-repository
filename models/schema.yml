@@ -32,3 +32,107 @@ sources:
               - not_null
            - name: sheeping_fee
              description: 'Ship cost for each order'
+      - name: adwords
+        identifier: raw_gz_adwords
+        description: 'ad campaigns on google adwords'
+        columns:
+           - name: date_date
+             description: 'date of each campaign'
+           - name: paid_source
+             description: 'tool used for the campaign'
+           - name: campaign_key
+             description: 'unique id of each campaign'
+             tests:
+              - not_null
+           - name: campaign_name
+             description: 'name of the campaign'
+           - name: ads_cost
+             description: 'cost of the campaign'
+             tests:
+              - not_null
+           - name: impression
+             description: 'number of impressions for the campaign'
+             tests:
+              - not_null
+           - name: click
+             description: 'number of clicks for the campaign'
+             tests:
+              - not_null
+      - name: bing
+        identifier: raw_gz_bing
+        description: 'ad campaigns on bing'
+        columns:
+           - name: date_date
+             description: 'date of each campaign'
+           - name: paid_source
+             description: 'tool used for the campaign'
+           - name: campaign_key
+             description: 'unique id of each campaign'
+             tests:
+              - not_null
+           - name: campaign_name
+             description: 'name of the campaign'
+           - name: ads_cost
+             description: 'cost of the campaign'
+             tests:
+              - not_null
+           - name: impression
+             description: 'number of impressions for the campaign'
+             tests:
+              - not_null
+           - name: click
+             description: 'number of clicks for the campaign'
+             tests:
+              - not_null
+      - name: criteo
+        identifier: raw_gz_criteo
+        description: 'ad campaigns on criteo'
+        columns:
+           - name: date_date
+             description: 'date of each campaign'
+           - name: paid_source
+             description: 'tool used for the campaign'
+           - name: campaign_key
+             description: 'unique id of each campaign'
+             tests:
+              - not_null
+           - name: campaign_name
+             description: 'name of the campaign'
+           - name: ads_cost
+             description: 'cost of the campaign'
+             tests:
+              - not_null
+           - name: impression
+             description: 'number of impressions for the campaign'
+             tests:
+              - not_null
+           - name: click
+             description: 'number of clicks for the campaign'
+             tests:
+              - not_null
+      - name: facebook
+        identifier: raw_gz_facebook
+        description: 'ad campaigns on facebook'
+        columns:
+           - name: date_date
+             description: 'date of each campaign'
+           - name: paid_source
+             description: 'tool used for the campaign'
+           - name: campaign_key
+             description: 'unique id of each campaign'
+             tests:
+              - not_null
+           - name: campaign_name
+             description: 'name of the campaign'
+           - name: ads_cost
+             description: 'cost of the campaign'
+             tests:
+              - not_null
+           - name: impression
+             description: 'number of impressions for the campaign'
+             tests:
+              - not_null
+           - name: click
+             description: 'number of clicks for the campaign'
+             tests:
+              - not_null
