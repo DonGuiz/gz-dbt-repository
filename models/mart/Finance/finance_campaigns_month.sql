@@ -13,7 +13,5 @@ SUM(margin) AS margin,
 SUM(shipping_fee) AS shipping_fee,
 SUM(log_cost) AS log_cost,
 SUM(ship_cost) AS ship_cost
-FROM {{ ref('int_campaigns_day') }}
-INNER JOIN {{ ref('finance_days') }}
-USING (date_date)
+FROM {{ ref('finance_campaign_days') }}
 GROUP BY datemonth
